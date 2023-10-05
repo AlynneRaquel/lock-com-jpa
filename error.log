@@ -1,0 +1,26 @@
+2023-10-05T20:00:23.303-03:00  INFO 24708 --- [restartedMain] com.example.lockjpa.LockJpaApplication   : Starting LockJpaApplication using Java 17.0.7 with PID 24708 (C:\Users\alynne.pereira\OneDrive\Projetos\BackEnd\Java\workspace_projetos\lock-jpa\target\classes started by alynne.pereira in C:\Users\alynne.pereira\OneDrive\Projetos\BackEnd\Java\workspace_projetos\lock-jpa)
+2023-10-05T20:00:23.304-03:00  INFO 24708 --- [restartedMain] com.example.lockjpa.LockJpaApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T20:00:23.373-03:00  INFO 24708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T20:00:23.374-03:00  INFO 24708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T20:00:23.898-03:00  INFO 24708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T20:00:23.917-03:00  INFO 24708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2023-10-05T20:00:24.446-03:00  INFO 24708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T20:00:24.456-03:00  INFO 24708 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T20:00:24.458-03:00  INFO 24708 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T20:00:24.529-03:00  INFO 24708 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-05T20:00:24.529-03:00  INFO 24708 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1155 ms
+2023-10-05T20:00:24.670-03:00  INFO 24708 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T20:00:24.715-03:00  INFO 24708 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-05T20:00:24.719-03:00  INFO 24708 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-05T20:00:24.854-03:00  INFO 24708 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T20:00:25.004-03:00  INFO 24708 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T20:00:25.023-03:00  INFO 24708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-05T20:00:25.437-03:00  INFO 24708 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e3c06ea
+2023-10-05T20:00:25.439-03:00  INFO 24708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-05T20:00:25.600-03:00  INFO 24708 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T20:00:25.813-03:00  INFO 24708 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T20:00:25.819-03:00  INFO 24708 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T20:00:25.880-03:00  WARN 24708 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T20:00:26.191-03:00  INFO 24708 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T20:00:26.230-03:00  INFO 24708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-05T20:00:26.239-03:00  INFO 24708 --- [restartedMain] com.example.lockjpa.LockJpaApplication   : Started LockJpaApplication in 3.289 seconds (process running for 4.086)
