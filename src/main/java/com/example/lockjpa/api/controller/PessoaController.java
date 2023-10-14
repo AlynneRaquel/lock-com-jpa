@@ -15,46 +15,34 @@ import com.example.lockjpa.domain.model.Pessoa;
 import com.example.lockjpa.domain.repository.PessoaRepository;
 import com.example.lockjpa.domain.service.PessoaService;
 
-import jakarta.persistence.OptimisticLockException;
-
-
 
 @RestController
 @RequestMapping("/pessoas")
 public class PessoaController {
-	
+
 	@Autowired
 	PessoaRepository pessoaRepository;
-	
+
 	@Autowired
 	PessoaService pessoaService;
-	
+
 	@GetMapping
 	public List<Pessoa> listar(){
 		return pessoaRepository.findAll();
 	}
-	
-	
+
+
 	@PutMapping("/{produtoId}")
 	public ResponseEntity<Pessoa> atualizar(@PathVariable Long produtoId, 
-			 @RequestBody Pessoa pessoa) {
+			@RequestBody Pessoa pessoa) {
 		if(!pessoaRepository.existsById(produtoId)) {
 			return ResponseEntity.notFound().build();
 		}
-		
+
 		pessoa.setId(produtoId);
-		
-		try {
-			pessoa = pessoaService.atualizarPessoa(pessoa); 
-			
-		} catch (Exception e) {
-			throw new OptimisticLockException();
-		}
+		pessoa = pessoaService.atualizarPessoa(pessoa); 
+
 		return ResponseEntity.ok(pessoa);
 	}
-	
-
-	
-	
 
 }
