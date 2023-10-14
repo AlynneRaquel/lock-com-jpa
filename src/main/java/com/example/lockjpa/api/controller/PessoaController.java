@@ -15,6 +15,8 @@ import com.example.lockjpa.domain.model.Pessoa;
 import com.example.lockjpa.domain.repository.PessoaRepository;
 import com.example.lockjpa.domain.service.PessoaService;
 
+import jakarta.persistence.OptimisticLockException;
+
 
 
 @RestController
@@ -41,7 +43,13 @@ public class PessoaController {
 		}
 		
 		pessoa.setId(produtoId);
-		pessoa = pessoaService.atualizarPessoa(pessoa); 
+		
+		try {
+			pessoa = pessoaService.atualizarPessoa(pessoa); 
+			
+		} catch (Exception e) {
+			throw new OptimisticLockException();
+		}
 		return ResponseEntity.ok(pessoa);
 	}
 	
